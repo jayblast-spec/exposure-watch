@@ -48,7 +48,7 @@ export async function POST(request: Request) {
       const d = entry as Record<string, unknown>;
       const exposedData =
         typeof d.xposed_data === "string"
-          ? d.xposed_data.split(",").map((s) => s.trim()).filter(Boolean)
+          ? d.xposed_data.split(/[;,]/).map((s) => s.trim()).filter(Boolean)
           : [];
       return {
         name: typeof d.breach === "string" ? d.breach : "Unknown",
