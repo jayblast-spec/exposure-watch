@@ -60,4 +60,4 @@ Optional: `HIBP_API_KEY` for subscriber endpoints.
 
 ## 📄 License
 
-MIT © [ArkNet.digital](https://arknet.digital)
+MIT © [ArkNet.digital](https://www.arknet.digital/vault.html)
