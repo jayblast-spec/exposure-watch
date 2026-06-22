@@ -1,38 +1,63 @@
-# Exposure Watch
+<div align="center">
 
-Exposure Watch is a product in the Cybersecurity Suite.
+# 🔓 Exposure Watch
 
-## Promise
+**Free instant email and password breach checker — find out if your credentials are already out there.**
 
-Check breach exposure without turning privacy into theater.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-6366f1?style=for-the-badge)](https://exposure-watch.vercel.app)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-34d399?style=for-the-badge)](LICENSE)
 
-Exposure Watch is a defensive breach-awareness tool for people and teams who need to understand email, password, and account exposure risk without handing sensitive data to a black box.
+</div>
 
-## Current v1
+---
 
-- Bespoke product cockpit UI
-- Live product-specific intake
-- `POST /api/intelligence`
-- Product-specific scoring and action queue
-- Contributor mission lanes
-- Mobile-friendly layout
+## ✨ Features
 
-## Contributor Missions
+- 📧 **Email breach check** — query whether your email appears in known data breaches
+- 🔑 **Password exposure check** — uses k-anonymity (HIBP pwned passwords) — your password never leaves your device
+- 📋 **Breach details** — which breaches, what data was leaked, when it happened
+- 🔢 **Breach count** — see exactly how many times an email has been compromised
+- 🔐 **Privacy-preserving design** — partial hashes only, credentials never transmitted in full
+- ⚡ **Instant results** — no account, no email required to check
+- 📱 **Mobile-friendly** — works perfectly on any device
 
-- HIBP-style connector: Add provider-backed email exposure checks with privacy safeguards.
-- No-secret password flow: Design password checks that never transmit raw passwords.
-- Team exposure report: Summarize domain-level identity exposure for admins.
-- Remediation checklist: Turn results into MFA, reset, and password-manager actions.
+---
 
-## Run Locally
+## 🚀 Quick Start
 
 ```bash
+git clone https://github.com/jayblast-spec/exposure-watch.git
+cd exposure-watch
 npm install
 npm run dev
 ```
 
-## Build
+Open [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run build
-```
+---
+
+## 🛠 Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Data | HaveIBeenPwned API |
+| Styling | Tailwind CSS |
+| Deployment | Vercel |
+
+---
+
+## 📦 Deploy Your Own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/jayblast-spec/exposure-watch)
+
+Optional: `HIBP_API_KEY` for subscriber endpoints.
+
+---
+
+## 📄 License
+
+MIT © [Joy Ogunleye](https://github.com/jayblast-spec) · Built with [ArkNet Forge](https://arknet-os.vercel.app)
