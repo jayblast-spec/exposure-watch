@@ -60,4 +60,4 @@ Optional: `HIBP_API_KEY` for subscriber endpoints.
 
 ## 📄 License
 
-MIT © [Joy Ogunleye](https://github.com/jayblast-spec) · [ArkNet.digital](https://arknet.digital)
+MIT © [ArkNet.digital](https://arknet.digital)
