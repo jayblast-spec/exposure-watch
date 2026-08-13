@@ -13,9 +13,12 @@ export default function ExposureWatchApp() {
   return (
     <main className="mx-auto flex w-full max-w-xl flex-1 flex-col px-4 py-8 sm:py-12">
       <header className="mb-6">
-        <div className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-soft text-lg text-accent">
-            ?
+        <div className="flex items-center gap-3">
+          <span className="icon-3d">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
           </span>
           <h1 className="text-xl font-bold text-foreground">Exposure Watch</h1>
         </div>

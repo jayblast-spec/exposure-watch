@@ -1,9 +1,14 @@
 const TOOLS = [
-  { name: "Exposure Watch", description: "Email & password breach checks", live: true, url: "https://exposure-watch.vercel.app" },
   { name: "PortGuard", description: "Exposed port & device scanner", live: true, url: "https://portguard-six.vercel.app" },
   { name: "SafeLink", description: "Link & file safety checker", live: true, url: "https://safelink-wheat.vercel.app" },
   { name: "SubnetPilot", description: "Subnet & CIDR calculator", live: true, url: "https://subnetpilot.vercel.app" },
   { name: "ThreatPulse", description: "Latest vulnerability feed", live: true, url: "https://threatpulse-six.vercel.app" },
+  { name: "BriefOS", description: "AI intelligence brief generator", live: true, url: "https://briefos-silk.vercel.app" },
+  { name: "PostCraft", description: "LinkedIn & X post writer", live: true, url: "https://postcraft-one.vercel.app" },
+  { name: "InvoiceKit", description: "Professional invoice builder", live: true, url: "https://invoicekit-pi.vercel.app" },
+  { name: "DayForge", description: "Daily execution planner", live: true, url: "https://dayforge-psi.vercel.app" },
+  { name: "MeetingMind", description: "Meeting notes → actions", live: true, url: "https://meetingmind-pied-one.vercel.app" },
+  { name: "ContractLens", description: "Contract risk scanner", live: true, url: "https://contractlens-rho.vercel.app" },
 ];
 
 export default function CrossPromoFooter() {
