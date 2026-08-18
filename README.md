@@ -42,6 +42,16 @@ Exposure Watch runs three defensive checks against real third-party security dat
 - `app/api/ip-check` validates the address format, then checks it against AbuseIPDB when an API key is configured.
 - `app/api/intelligence` powers the posture studio on the homepage with a deterministic scoring model (no external key required), returning an exposure map, action queue, and contributor lanes.
 
+## Engineering Notes
+
+**The real problem:** a password checker that sends your actual password (or its full hash) to a server is asking for the exact trust it's trying to help you verify — the tool itself becomes the leak vector.
+
+**The approach:** `password-check` never transmits the full SHA-1 hash. It splits the hash, sends only the 5-character prefix to HIBP's k-anonymity range endpoint, and matches the suffix client-side against the returned candidate list — HIBP's servers see a prefix shared by thousands of possible passwords, never which one is yours.
+
+**One real number:** a 5-character hex prefix narrows the candidate space to roughly 1-in-16^5 (~1M) possible hashes sharing that prefix — enough ambiguity that the server can't reasonably infer the original password.
+
+**Not handled yet:** `ip-check` degrades silently to format-validation-only when no AbuseIPDB key is configured, and the homepage "posture score" widget is a decorative heuristic, not a real exposure calculation — don't read it as a security score.
+
 ## Live
 
 [exposurewatch-sigma.vercel.app](https://exposurewatch-sigma.vercel.app)
